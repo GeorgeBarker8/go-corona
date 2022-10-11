@@ -536,7 +536,7 @@ body
 
 .healthcare__items
     display: flex
-    min-width: 980px
+    // min-width: 980px
     margin: 0 auto
     // gap: 72px
 
@@ -618,6 +618,21 @@ body
         transform: rotate(35deg)
         background-color: #EC5863
         border-radius: 16px
+//!MEDIA__HEALTHCARE=============================================//
+
+@media ( max-width: 1087px )
+    .healthcare__column
+        padding: 0px 15px
+
+@media ( max-width:  991.98px )
+    .healthcare
+        padding: 30px 0px 30px 0px
+    .healthcare__items
+        flex-direction: column
+    .healthcare__column
+        &:not(:last-child)
+            margin: 0px 0px 25px 0px
+
 
 //!FOOTER======================================================//
 
@@ -626,6 +641,16 @@ body
 
 .footer__items
     display: flex
-    gap: 50px
+    column-gap: 50px
+    row-gap: 20px
     justify-content: center
     align-items: center
+
+//!MEDIA__FOOTER==============================================//
+
+@media ( max-width: 500px )
+    .footer
+        padding: 30px 0
+
+    .footer__items
+        flex-direction: column
