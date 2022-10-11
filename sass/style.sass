@@ -538,13 +538,14 @@ body
     display: flex
     min-width: 980px
     margin: 0 auto
-    gap: 72px
+    // gap: 72px
 
 .healthcare__item
     flex: 0 1 33.333%
 
 .item-healthcare
     position: relative
+    z-index: 2
     background: fff
     box-shadow: 0px 4px 18px rgba(88, 126, 236, 0.18)
     border-radius: 8px
@@ -567,15 +568,51 @@ body
 .item-healthcare__text
     line-height: 138.5%
 
-.item-healthcare-1
+.healthcare__column
+    position: relative
+    padding: 0px 36px
+    flex: 0 1 33.333%
+
+.healthcare__column-1
     &::before
         content: ''
         width: 65px
         height: 65px
         position: absolute
-        bottom: 0
-        left: 0
+        bottom: -35px
+        left: 15px
         transform: rotate(-30deg)
         background-color: #EC5863
         border-radius: 16px
+    &::after
+        content: ''
+        width: 97px
+        height: 97px
+        position: absolute
+        top: 35px
+        right: -10px
+        transform: rotate(30deg)
+        background-color: #EC5863
+        border-radius: 30px
 
+.healthcare__column-2
+    // &::before
+    //     content: ''
+    //     width: 65px
+    //     height: 65px
+    //     position: absolute
+    //     bottom: -35px
+    //     left: 15px
+    //     transform: rotate(-30deg)
+    //     background-color: #EC5863
+    //     border-radius: 16px
+    &::after
+        content: ''
+        width: 127px
+        height: 127px
+        position: absolute
+        bottom: -35px
+        right: -30px
+        transform: rotate(30deg)
+        background-color: #EC5863
+        border-radius: 30px
