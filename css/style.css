@@ -710,4 +710,15 @@ body {
   transform: rotate(35deg);
   background-color: #EC5863;
   border-radius: 16px;
+}
+
+.footer {
+  padding: 45px 0;
+}
+
+.footer__items {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */
