@@ -545,8 +545,7 @@ body
 
 .item-healthcare
     position: relative
-    z-index: 2
-    background: fff
+    background-color: #fff
     box-shadow: 0px 4px 18px rgba(88, 126, 236, 0.18)
     border-radius: 8px
     display: flex
@@ -554,6 +553,7 @@ body
     align-items: center
     text-align: center
     padding: 35px 17px
+    z-index: 5
 
 .item-healthcare__icon
     margin: 0px 0px 58px 0px
@@ -596,23 +596,25 @@ body
         border-radius: 30px
 
 .healthcare__column-2
-    // &::before
-    //     content: ''
-    //     width: 65px
-    //     height: 65px
-    //     position: absolute
-    //     bottom: -35px
-    //     left: 15px
-    //     transform: rotate(-30deg)
-    //     background-color: #EC5863
-    //     border-radius: 16px
     &::after
         content: ''
         width: 127px
         height: 127px
         position: absolute
         bottom: -35px
-        right: -30px
-        transform: rotate(30deg)
+        right: -35px
+        transform: rotate(55deg)
         background-color: #EC5863
         border-radius: 30px
+
+.healthcare__column-3
+    &::after
+        content: ''
+        position: absolute
+        width: 65px
+        height: 65px
+        top: -25px
+        right: 10px
+        transform: rotate(35deg)
+        background-color: #EC5863
+        border-radius: 16px
